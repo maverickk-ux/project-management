@@ -20,6 +20,6 @@ app.use("/api/inngest", serve({ client: inngest, functions }));
 // Routes
 app.use("/api/workspaces",protect, workspaceRouter)
 
-const PORT = process.env.PORT || 500
+const PORT = process.env.PORT || 5002
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
